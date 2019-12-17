@@ -1,0 +1,477 @@
+html, body {
+  overflow-y: visible;
+  background-color: #FAF5EC;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: italic;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -345px;
+  width: 400px;
+  height: 100%;
+  margin: auto 0px;
+  background-color: #005E45;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* Addition of visible class to use in JS */
+#sidebar.visible {
+  left: 0;
+}
+
+/* Sidebar min is the duplicate of the close menu to enable easier access to the menu */
+#sidebar-min {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 55px;
+  height: 100%;
+  margin: auto 0px;
+  background-color: #005E45;
+  opacity: 80%;
+  transition: all 0.3s ease;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#sidebar-min:hover {
+  background-color: #009A79;
+}
+
+/* Overarching id for menu content */
+#menu-items {
+  margin-top: 30%;
+  z-index: 3;
+}
+
+/* Contain the min sidebar text elements in a container so it can be rotated */
+#tab-container {
+  position: fixed;
+  bottom: 20px;
+  left: 8px;
+  padding: 5px;
+  z-index: 3;
+  transform: rotate(270deg);
+  /*Fix the text wrapping after the rotate*/
+  white-space: nowrap;
+}
+
+.tab-text {
+  position: fixed;
+  color: white;
+  font-size: 25px;
+  text-align: left;
+  z-index: 3;
+}
+
+.tab-text:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 10px;
+  height: 10px;
+  margin: 8px auto;
+  margin-left: 13px;
+  background-color: #FFFFFF;
+  z-index: 3;
+  border-radius: 5px;
+}
+
+/* Animation of the logo icon for when menu opens and closes */
+#container-logo-icon {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+#container-logo-icon.visible {
+  opacity: 0;
+}
+
+/* Contained hamburger elements in container to allow rotation in place */
+#container-menu {
+  position: fixed;
+  bottom: 48%;
+  left: 0;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+#container-menu:hover .hamburger {
+  background-color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#container-menu.rotate {
+  transform: rotate(90deg);
+}
+
+#menu-logo {
+  position: absolute;
+  width: auto;
+  height: 45px;
+  top: 20px;
+  margin-left: 80px;
+  animation: logoFade 0.3s ease-in-out 1;
+  z-index: 3;
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Menu text properties */
+.menu-heading {
+  position: relative;
+  font-style: italic;
+  font-weight: 900;
+  color: white;
+  margin-left: 80px;
+  margin-top: 60px;
+  font-size: 40px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-heading:hover {
+  color: #FF8200;
+}
+
+/* Submenu text properties */
+.submenu-heading {
+  position: relative;
+  font-style: italic;
+  font-weight: 600;
+  color: #009A79;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.submenu-heading:hover {
+  color: #FF8200;
+}
+
+.lydian-RGB {
+  max-width: 140px;
+  padding-top: 30px;
+}
+
+.featureImgText {
+  padding-top: 40%;
+}
+
+.featureImgText-Chapter {
+  padding-top: 20%;
+}
+
+.heading60 {
+  font-size: 50px;
+  color: #005E45;
+}
+
+.heading60-Orange {
+  font-size: 50px;
+  color: #FF8200;
+}
+
+.subheading36 {
+  font-size: 30px;
+  color: #005E45;
+}
+
+.subheading36-Orange {
+  font-size: 30px;
+  color: #FF8200;
+}
+
+.subheading24-lgreen {
+  font-size: 24px;
+  color: #009A79;
+}
+
+.subheading24-lightgreen {
+  font-size: 21px;
+  color: #91BAB1;
+}
+
+.featureImgDiv {
+  position: absolute;
+  padding-top: 20%;
+}
+
+.featureImg1 {
+  position: absolute;
+  max-width: 300px;
+  padding-top: 20%;
+  z-index: 2;
+}
+
+.featureImg2 {
+  position: absolute;
+  max-width: 450px;
+  padding-top: 45px;
+  padding-left: 200px;
+  z-index: 1;
+}
+
+.btn-journey {
+  border-radius: 25px;
+  box-shadow: -6px 6px 10px rgba(0,0,0,0.2);
+}
+
+.btn-primary-lydian {
+  color: #FFFFFF;
+  background-color: #009A79;
+  border-color: #009A79;
+}
+
+.btn-primary-lydian-previous {
+  color: #FFFFFF;
+  background-color: #91BAB1;
+  border-color: none;
+}
+
+.btn-primary-lydian:hover {
+  color: #FFFFFF;
+  background-color: #005E45;
+  border-color: #005E45;
+}
+
+.btn-primary-lydian-previous:hover {
+  color: #FFFFFF;
+  background-color: #009A79;
+  border-color: #009A79;
+}
+
+.btn-primary-lydian:focus {
+  color: #FFFFFF;
+  background-color: #91BAB1;
+  border-color: #91BAB1;
+}
+
+.btn-primary-lydian:active {
+  color: #FFFFFF;
+  background-color: #91BAB1;
+  border-color: #91BAB1;
+}
+
+.div-journey {
+  padding-top: 30px;
+}
+
+.div-journey-next {
+  padding-top: 30px;
+  float: right;
+}
+
+.div-journey-before {
+  padding-top: 30px;
+  float: left;
+}
+
+.lydian-nav-text {
+  padding-top: 35px;
+  color: #009A79;
+}
+
+.lydian-nav-active {
+  font-weight: 700;
+  font-style: normal;
+  color: #005E45;
+}
+
+.lydian-nav-text-a {
+  color: #009A79;
+  font-size: 21px;
+}
+
+.lydian-nav-text-a:hover {
+  color: #FF8200;
+}
+
+.lydian-nav-text-active-a {
+  font-weight: 700;
+  font-style: normal;
+  color: #005E45;
+  font-size: 21px;
+}
+
+.lydian-nav-text-active-a:hover {
+  color: #FF8200;
+}
+
+.lydian-chapters {
+  padding-top: 20px;
+}
+
+.masthead {
+  min-height: 30rem;
+  position: relative;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding-top: 0rem;
+  padding-bottom: 8rem;
+  background: linear-gradient(-180deg, rgba(250, 245, 236, 0), rgba(250, 245, 236, 1)), url("../img/Group 2@2x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-section {
+  padding-top: 7.5rem;
+}
+
+.chapter-preview-left {
+  padding: 10px 10px 10px 0px;
+}
+
+.chapter-preview-right {
+  padding: 10px 0px 10px 10px;
+}
+
+.chapter-preview-bounds {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.chapter-preview-bounds:hover {
+  opacity: 1;
+}
+
+.top-left-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.chapterbox36 {
+  font-size: 21px;
+  color: #FFFFFF;
+}
+
+.chapterbox36-Orange {
+  font-size: 21px;
+  color: #FF8200;
+}
+
+.previous-text {
+  font-size: 21px;
+  padding-top: 10px;
+  color: #009A79;
+}
+
+.previous-text:hover {
+  color: #FF8200;
+}
+
+.scrolling-gallery {
+  white-space: normal;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scrolling-gallery-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  }
+}
+
+.scrolling-card {
+  flex: 0 0 auto;
+}
+
+.gallery-image {
+  max-height: 300px;
+  padding-right: 20px;
+}
+
+* {box-sizing: border-box;}
+
+.img-comp-container {
+  position: relative;
+  height: 200px; /*should be the same height as the images*/
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.img-comp-img img {
+  display: block;
+  vertical-align: middle;
+}
+
+.img-comp-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  /*set the appearance of the slider:*/
+  width: 25px;
+  height: 60px;
+  background-color: #FF8200;
+  opacity: 0.5;
+  border-radius: 10%;
+}
