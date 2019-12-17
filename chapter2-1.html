@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lydian Money Chapter 2.1</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/lydian.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,700,700i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Beginning of content -->
+  <header class="masthead">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <img class="lydian-RGB" src="img/LydianLogo@3x.png" alt="Lydian Logo RGB"></img>
+      </div>
+      <div class="col-lg-4"></div>
+      <div class="col-lg-1">
+        <h4 class="lydian-nav-text"><a href="#" class="lydian-nav-text-a">About</a></h4>
+      </div>
+      <div class="col-lg-1">
+        <h4 class="lydian-nav-text"><a href="#" class="lydian-nav-text-a">Task 1</a></h4>
+      </div>
+      <div class="col-lg-1">
+        <h4 class="lydian-nav-text"><a href="#" class="lydian-nav-text-a">Task 2</a></h4>
+      </div>
+      <div class="col-lg-1">
+        <h4 class="lydian-nav-text lydian-nav-active"><a href="task3.html" class="lydian-nav-text-active-a">Task 3</a></h4>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <h1 class="featureImgText-Chapter"><h2 class="heading60-Orange">Chapter 2</h1><h3 class="heading60">A Purpose-Driven Solution</h3></h1><br><br>
+            <h3 class="featureImgSubtext"><h1 class="subheading36">2.1.</h1><h4 class="subheading36">Updated user journey map</h4></h3>
+            <div class="div-journey"><a href="#chapter2-1"><button type="button" class="btn btn-lg btn-primary-lydian btn-journey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Read Chapter 2.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a></div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+  </div>
+  </header>
+
+<!-- START CHAPTER 1 -->
+<section class="content-section" id="chapter2-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-3">
+        <!-- EDIT HEADINGS HERE -->
+        <h1 class="chapterHeading"><h4 class="subheading36-Orange">Chapter 2.1 <h1 class="subheading36">Updated User Journey Map</h1></h4></h1>
+      </div>
+      <div class="col-lg-5">
+        <!-- EDIT TEXT HERE -->
+        <p>
+          The new updated journey map for Lydian money follows Jennifer, 27 and always buys coffee from her favourite coffee shop.
+<br><br>
+          However, today she’s forgotten her wallet at home and it often frustrates her when she realises she forgets something important.
+<br><br>
+          Luckily for Jennifer, she recently signed up to use Lydian Money, a mobile app that allows her to use FaceID to verify her credentials, and uses mobile payments to pay for her morning coffee.
+<br><br>
+          On this particular morning, Jennifer didn’t realise that her phone bill and subscriptions were charged to her card, and after paying for her coffee, notices that her budget circle is red. While this stresses her out for a moment, she quickly realises she can double check what went wrong, and goes to the spending screen to view her recent transactions.
+<br><br>
+          After realising the culprit, she remembers that it is the beginning of a new month, which means pay day! Immediately, she goes to the track screen to check her bank balance.
+          Additionally, every month she reviews her budget, to see if she’s been spending appropriately. While she’s still waiting for her coffee, Jennifer can continue to use the same app to view her budget and can clearly see that her spending is still within the budget she set last month!
+        </p>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+<br><br>
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <!-- EDIT IMAGE HERE -->
+        <img src="img/USER-JOURNEY-MAP_150-01.png" alt="User Journey Map" style="max-width:100%"></img>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-7"></div>
+      <div class="col-lg-3">
+        <div class="div-journey-next"><a href="chapter2-2.html"><button type="button" class="btn btn-lg btn-primary-lydian btn-journey">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next Chapter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a></div>
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- START FOOTER -->
+<section class="content-section" id="footer">
+  <div class="container">
+    <div class="row">
+    </div>
+    </div>
+</section>
+<!-- END FOOTER -->
+
+
+
+
+
+
+  <!-- Javascript -->
+  <script src="js/lydian.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 400,function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
