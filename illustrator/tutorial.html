@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Illustrator · Tutorials</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sidebar.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i|Source+Sans+Pro:600i,900i" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Side Menu -->
+  <div id="sidebar">
+    <div id="menu-items">
+      <a href="index.html"><img id="menu-logo" src="img/logo_yellow.svg"></a>
+      <a href="index.html">
+        <h1 class="menu-heading">Home</h1>
+      </a>
+      <a href="ourmission.html">
+        <h1 class="menu-heading">About</h1>
+      </a>
+      <a href="ourmission.html">
+        <h2 class="submenu-heading">our mission</h2>
+      </a>
+      <a href="tutorial.html">
+        <h1 class="menu-heading">Tutorials</h1>
+      </a>
+      <a href="tutorial.html">
+        <h2 class="submenu-heading">getting started</h2>
+      </a>
+      <a href="contact.html">
+        <h1 class="menu-heading">Contact</h1>
+      </a>
+    </div>
+  </div>
+  <div id="sidebar-min" onclick="showMenu()"></div>
+  <a href="index.html"><img id="container-logo-icon" src="img/logo-icon.svg"></a>
+  <img href="img/logo-icon.svg">
+  <div id="tab-container" onclick="showMenu()">
+    <h1 class="tab-text">Tutorials</h1>
+  </div>
+  <div id="container-menu" onclick="showMenu()">
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+    <div class="hamburger"></div>
+  </div>
+  <!-- Content -->
+  <div class="container">
+    <div class="row">
+      <div id="header-image-tutorial">
+        <h1 class="header-img-text-tutorial text-navy">Navigating the Illustrator UI</h1>
+        <p class="header-image-body">UIs are scary, so let's shed some light on it</p>
+        <img id="header-logo" src="img/logo_navy.svg">
+      </div>
+    </div>
+    <div id="tutorial_content">
+      <div class="row justify-content-center row-override">
+        <div class="col-6">
+          <h1 class="about_headings" style="text-align: left;">Getting Started in Adobe Illustrator</h1>
+          <hr><br><br>
+        </div>
+      </div>
+      <div class="row justify-content-center row-override">
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-01.png">
+        </div>
+        <div class="col-4 tutorial-text-right">
+          <h3 class="tutorial-heading">1. The Welcome Dashboard</h3>
+          <p class="tutorial-body">Welcome to Adobe Illustrator! The first screen you'll see upon opening up the program is the Welcome Dashboard! This features your most recent Illustrator projects!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-4 tutorial-text-left">
+          <h3 class="tutorial-heading" style="text-align: right;">2. List or thumbnail view</h3>
+          <p class="tutorial-body">List view can be a bit lacking in its visuals - we recommend going into the thumbnail view, which can be accessed as shown on the right.</p>
+        </div>
+        <div class="col-3">
+          <img class="tutorial-screen-full" style="width: 70%;" src="img/screens-02.png">
+        </div>
+      </div>
+      <div class="row justify-content-center row-override3">
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-04.png">
+        </div>
+        <div class="col-4 tutorial-text-right">
+          <h3 class="tutorial-heading">3. New Document</h3>
+          <p class="tutorial-body">The important part! The dimensions and settings for your new document sets the stage for what you're creating. From the basic menu, you can decide on your canvas dimensions, units, orientation, artboards and bleed
+            settings for printing! (don't worry these can be changed even after making the document!)</p>
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-4 tutorial-text-left">
+          <h3 class="tutorial-heading" style="text-align: right;">4. Advanced Document Options</h3>
+          <p class="tutorial-body">Here's where you can define what colour space to work in (RGB for digital and CMYK for print); additionally you can change your pixel density. If you are designing something for print - you would usually use 300ppi
+            as opposed to 72ppi for purely digital media.</p>
+        </div>
+        <div class="col-3">
+          <img class="tutorial-screen-full" style="width: 50%;" src="img/screens-06.png">
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-07.png">
+        </div>
+        <div class="col-4 tutorial-text-right">
+          <h3 class="tutorial-heading">5. The Dashboard</h3>
+          <p class="tutorial-body">Here's where you'll spend 90% of your time in Illustrator! We'll cover the primary features of this dashboard below!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-4 tutorial-text-left">
+          <h3 class="tutorial-heading" style="text-align: right;">6. Workspaces</h3>
+          <p class="tutorial-body">Workspaces allow you to alter the layout of tools based on the templates provided - but you also have the ability to make and save custom ones! (Like I have here!)</p>
+        </div>
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-08.png">
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-09.png">
+        </div>
+        <div class="col-4 tutorial-text-right">
+          <h3 class="tutorial-heading">7. The Tools</h3>
+          <p class="tutorial-body">We like to define the left side of Illustrator as our 'Tools'. This is where we'll find the tools that allow us to create something new; like shapes or text!</p>
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-4 tutorial-text-left">
+          <h3 class="tutorial-heading" style="text-align: right;">8. The Properties</h3>
+          <p class="tutorial-body">We define the right side of Illustrator as our 'Properties'. This is where you can change the properties of selected elements, like colour, typpography and more!</p>
+        </div>
+        <div class="col-5">
+          <img class="tutorial-screen-full" src="img/screens-10.png">
+        </div>
+      </div>
+      <div class="row justify-content-center row-override2">
+        <div class="col-4 tutorial-text-left">
+          <h3 class="tutorial-heading" style="text-align: center;">Congratulations on completing the Getting Started Guide to Adobe Illustrator!</h3>
+          <p class="tutorial-body" style="text-align: center;">Enjoying the illustrator so far? We're coming back soon with even more content!</p>
+          <br><br>
+          <hr><br><br>
+        </div>
+      </div>
+    </div>
+    <!-- Javascript -->
+    <script src="sidebar.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
